@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataScience Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Project Library</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="datascience.html">DataScience</a></li>
+                <li><a href="web.html">Web</a></li>
+                <li><a href="dev.html" class="active">Dev</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search projects...">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="projects-grid" id="projectsGrid">
+        </div>
+    </main>
+
+    <script src="../js/projects.js"></script>
+    <script>
+        const projects = [
+            {
+                title: "Graph Visual Repo",
+                description: "The script is a browser extension for visualizing repositories on the contributor's page.",
+                imageUrl: "https://raw.githubusercontent.com/IlyaElevrin/graph_visual_repo/refs/heads/main/example.png",
+                repoUrl: "https://github.com/IlyaElevrin/graph_visual_repo"
+            },
+            {
+                title: "WB parsing",
+                description: "Wildberries parsing in google sheets of seller cards and cards from the main page (of the client).",
+                imageUrl: "https://opora.ru/site/assets/files/51446/vb.1536x1152.webp",
+                repoUrl: "https://github.com/IlyaElevrin/wb_parsing"
+            }
+        ];
+
+        document.addEventListener('DOMContentLoaded', () => {
+            renderProjects(projects);
+            setupSearch(projects);
+        });
+    </script>
+</body>
+</html>

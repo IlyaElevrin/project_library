@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+</head>
+<body class="home">
+    <header>
+        <nav>
+            <div class="logo">Project Library</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="projects/datascience.html">DataScience</a></li>
+                <li><a href="projects/web.html">Web</a></li>
+                <li><a href="projects/dev.html">Dev</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search projects...">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content">
+            <h1>Welcome to the Elevrin's Project Library</h1>
+            <p>This is a personal collection of useful and interesting projects in various fields.</p>
+            
+            <div class="categories">
+                <div class="category">
+                    <h2>DataScience</h2>
+                    <p>Projects involving data analysis, machine learning, deep learning, and MLOps.</p>
+                </div>
+                <div class="category">
+                    <h2>Web</h2>
+                    <p>Frontend and backend web development projects, including full-stack applications.</p>
+                </div>
+                <div class="category">
+                    <h2>Dev</h2>
+                    <p>Software development tools, scripts, and utilities to improve your workflow.</p>
+                </div>
+            </div>
+        </div>
+        <div class="formula-container" id="formulaContainer">
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

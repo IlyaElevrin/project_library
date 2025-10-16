@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataScience Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Project Library</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="datascience.html">DataScience</a></li>
+                <li><a href="web.html" class="active">Web</a></li>
+                <li><a href="dev.html">Dev</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search projects...">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="projects-grid" id="projectsGrid">
+        </div>
+    </main>
+
+    <script src="../js/projects.js"></script>
+    <script>
+        const projects = [
+        ];
+
+        document.addEventListener('DOMContentLoaded', () => {
+            renderProjects(projects);
+            setupSearch(projects);
+        });
+    </script>
+</body>
+</html>
